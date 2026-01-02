@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardápio Açaí</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="logo.png" alt="Logo Açaiteria" class="logo">
+</header>
+
+<main class="container">
+
+  <h2 class="section-title">Açaí</h2>
+
+  <!-- AÇAÍ 300ML -->
+  <div class="item" data-name="Açaí 300ml" data-price="12">
+    <img src="acai300.png" class="item-img">
+    <div class="item-info">
+      <h3>Açaí 300ml</h3>
+
+      <p><strong>Sabor do Açaí</strong></p>
+      <label>
+  <input type="radio" name="sabor-300" value="Normal">
+  <span>Normal</span>
+</label>
+      <label>
+  <input type="radio" name="sabor-300" value="Banana">
+  <span>Banana</span>
+</label>
+      <label>
+  <input type="radio" name="sabor-300" value="Morango">
+  <span>Morango</span>
+</label>
+
+<div class="complementos" style="display:none">
+  <p class="titulo-complementos"><strong>Complementos</strong></p>
+
+  <div class="grid-complementos">
+    <label class="check-card">
+      <input type="checkbox" value="Paçoca">
+      <span>Paçoca</span>
+    </label>
+
+    <label class="check-card">
+      <input type="checkbox" value="Chocobol">
+      <span>Chocobol</span>
+    </label>
+
+    <label class="check-card">
+      <input type="checkbox" value="Jujuba">
+      <span>Jujuba</span>
+    </label>
+
+    <label class="check-card">
+      <input type="checkbox" value="Amendoim">
+      <span>Amendoim</span>
+    </label>
+
+    <label class="check-card">
+      <input type="checkbox" value="Flocos de Arroz">
+      <span>Flocos de Arroz</span>
+    </label>
+
+    <label class="check-card">
+      <input type="checkbox" value="Granola">
+      <span>Granola</span>
+    </label>
+
+    <label class="check-card">
+      <input type="checkbox" value="Sucrilhos">
+      <span>Sucrilhos</span>
+    </label>
+  </div>
+</div>
+
+      <div class="caldas" style="display:none">
+        <p><strong>Calda</strong></p>
+        <label>
+  <input type="radio" name="sabor-300" value="Sem Calda">
+  <span>Sem Calda</span>
+</label>
+      <label>
+  <input type="radio" name="sabor-300" value="Chocolate">
+  <span>Chocolate</span>
+</label>
+      <label>
+  <input type="radio" name="sabor-300" value="Amora">
+  <span>Amora</span>
+</label>
+      </div>
+    </div>
+
+    <div class="item-actions">
+      <span class="price">R$ 12,00</span>
+      <div class="qty">
+        <button class="dec">−</button>
+        <span class="count">1</span>
+        <button class="inc">+</button>
+      </div>
+      <button class="add">Adicionar</button>
+    </div>
+  </div>
+
+  <!-- AÇAÍ 500ML -->
+  <div class="item" data-name="Açaí 500ml" data-price="18">
+    <img src="acai500.png" class="item-img">
+    <div class="item-info">
+      <h3>Açaí 500ml</h3>
+
+      <p><strong>Sabor do Açaí</strong></p>
+       <label>
+  <input type="radio" name="sabor-500" value="Normal">
+  <span>Normal</span>
+</label>
+       <label>
+  <input type="radio" name="sabor-500" value="Banana">
+  <span>Banana</span>
+</label>
+       <label>
+  <input type="radio" name="sabor-500" value="Morango">
+  <span>Morango</span>
+</label>
+
+      <div class="complementos" style="display:none">
+        <p><strong>Complementos</strong></p>
+        <label><input type="checkbox" value="Paçoca"> Paçoca</label><br>
+        <label><input type="checkbox" value="Chocobol"> Chocobol</label><br>
+        <label><input type="checkbox" value="Jujuba"> Jujuba</label><br>
+        <label><input type="checkbox" value="Amendoim"> Amendoim</label><br>
+        <label><input type="checkbox" value="Flocos de Arroz"> Flocos de Arroz</label><br>
+        <label><input type="checkbox" value="Granola"> Granola</label><br>
+        <label><input type="checkbox" value="Sucrilhos"> Sucrilhos</label>
+      </div>
+
+      <div class="caldas" style="display:none">
+        <p><strong>Calda</strong></p>
+        <label><input type="radio" name="calda-500" value="Sem Calda"> Sem Calda</label><br>
+        <label><input type="radio" name="calda-500" value="Chocolate"> Chocolate</label><br>
+        <label><input type="radio" name="calda-500" value="Amora"> Amora</label><br>
+        <label><input type="radio" name="calda-500" value="Morango"> Morango</label><br>
+        <label><input type="radio" name="calda-500" value="Maracujá"> Maracujá</label>
+      </div>
+    </div>
+
+    <div class="item-actions">
+      <span class="price">R$ 18,00</span>
+      <div class="qty">
+        <button class="dec">−</button>
+        <span class="count">1</span>
+        <button class="inc">+</button>
+      </div>
+      <button class="add">Adicionar</button>
+    </div>
+  </div>
+
+  <!-- AÇAÍ 700ML -->
+  <div class="item" data-name="Açaí 700ml" data-price="25">
+    <img src="acai700.png" class="item-img">
+    <div class="item-info">
+      <h3>Açaí 700ml</h3>
+
+      <p><strong>Sabor do Açaí</strong></p>
+       <label>
+  <input type="radio" name="sabor-700" value="Normal">
+  <span>Normal</span>
+</label>
+       <label>
+  <input type="radio" name="sabor-700" value="Banana">
+  <span>Banana</span>
+</label>
+       <label>
+  <input type="radio" name="sabor-700" value="Morango">
+  <span>Morango</span>
+</label>
+
+      <div class="complementos" style="display:none">
+        <p><strong>Complementos</strong></p>
+        <label><input type="checkbox" value="Paçoca"> Paçoca</label><br>
+        <label><input type="checkbox" value="Chocobol"> Chocobol</label><br>
+        <label><input type="checkbox" value="Jujuba"> Jujuba</label><br>
+        <label><input type="checkbox" value="Amendoim"> Amendoim</label><br>
+        <label><input type="checkbox" value="Flocos de Arroz"> Flocos de Arroz</label><br>
+        <label><input type="checkbox" value="Granola"> Granola</label><br>
+        <label><input type="checkbox" value="Sucrilhos"> Sucrilhos</label>
+      </div>
+
+      <div class="caldas" style="display:none">
+        <p><strong>Calda</strong></p>
+        <label><input type="radio" name="calda-700" value="Sem Calda"> Sem Calda</label><br>
+        <label><input type="radio" name="calda-700" value="Chocolate"> Chocolate</label><br>
+        <label><input type="radio" name="calda-700" value="Amora"> Amora</label><br>
+        <label><input type="radio" name="calda-700" value="Morango"> Morango</label><br>
+        <label><input type="radio" name="calda-700" value="Maracujá"> Maracujá</label>
+      </div>
+    </div>
+
+    <div class="item-actions">
+      <span class="price">R$ 25,00</span>
+      <div class="qty">
+        <button class="dec">−</button>
+        <span class="count">1</span>
+        <button class="inc">+</button>
+      </div>
+      <button class="add">Adicionar</button>
+    </div>
+  </div>
+
+</main>
+
+
+
+<footer class="cart">
+  <div id="resumo-pedido"></div>
+
+  <span>Total: R$ <strong id="total">0.00</strong></span>
+  <button id="send">Finalizar pedido</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

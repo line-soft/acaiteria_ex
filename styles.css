@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+.header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 220px;
+}
+
+.container {
+  padding: 14px;
+}
+
+.section-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #b24b84;
+}
+
+.item {
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+}
+
+.item-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.item-info p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.qty {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.qty button {
+  border: none;
+  background: #eee;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.add {
+  background: #d36aa2;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.cart button {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 14px;
+}
+/* HEADER abraça a logo */
+.header {
+  width: 100%;
+  background-color: #610165; /* ROXO IGUAL ao da imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* MUITO IMPORTANTE */
+}
+
+/* Logo define a altura */
+.header .logo {
+  width: auto;
+  max-width: 260px; /* ajuste se quiser */
+  height: auto;
+  display: block;
+}
+/* OPÇÕES MODERNAS */
+.item-info label {
+  display: inline-block;
+  margin: 4px 4px 4px 0;
+  cursor: pointer;
+}
+
+.item-info input {
+  display: none;
+}
+
+.item-info label span {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: #eee;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.item-info input:checked + span {
+  background: #d36aa2;
+  color: #fff;
+}
+
+/* RESUMO DO PEDIDO */
+#resumo-pedido {
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#resumo-pedido .resumo-item {
+  background: #f7f7f7;
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+/* mantém o grid como está */
+.grid-complementos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* card não tem visual */
+.check-card {
+  border: none;
+  background: transparent;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* remove checkbox */
+.check-card input {
+  display: none;
+}
+
+/* apenas o nome */
+.check-card span {
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: #f472b6;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* quando NÃO marcado */
+.check-card input:not(:checked) + span {
+  opacity: 0.85;
+}
+
+/* quando marcado */
+.check-card input:checked + span {
+  background: #ec4899;
+  opacity: 1;
+}
+
+
+/* GRID: espaço MÍNIMO possível */
+.grid-complementos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px; /* 🔥 quase colado */
+}
+
+/* CARD: sem altura extra */
+.check-card {
+  height: auto;          /* remove espaço fantasma */
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* remove checkbox */
+.check-card input {
+  display: none;
+}
+
+/* PILULA DO TEXTO */
+.check-card span {
+  margin: 0;             /* remove margem padrão */
+  padding: 4px 10px;     /* mínimo confortável */
+  border-radius: 12px;
+
+  font-size: 12px;
+  line-height: 1;        /* 🔥 cola vertical */
+  white-space: nowrap;
+}
+
+/* estados */
+.check-card input:not(:checked) + span {
+  opacity: 0.85;
+}
+
+.check-card input:checked + span {
+  opacity: 1;
+}
