@@ -318,3 +318,39 @@ span,
 button {
   max-width: 100%;
 }
+
+
+
+
+/* ===== RESUMO COM BOTÃO DE REMOVER ===== */
+.resumo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.resumo-texto {
+  flex: 1;
+}
+
+/* ===== BOTÃO LIXEIRA COM FUNDO VERMELHO ===== */
+.remove-item {
+  background: #dc2626 !important; /* vermelho */
+  color: #fff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.remove-item:hover {
+  background: #b91c1c;
+}

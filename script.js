@@ -47,15 +47,32 @@ document.querySelectorAll(".item").forEach(item => {
     total += price * qty;
     totalEl.textContent = total.toFixed(2);
 
-    const resumoItem = document.createElement("div");
-    resumoItem.className = "resumo-item";
-    resumoItem.innerHTML = `
-      <strong>${item.dataset.name}</strong> (${qty}x)<br>
-      Sabor: ${sabor.value}<br>
-      Complementos: ${comps.length ? comps.join(", ") : "Nenhum"}<br>
-      Calda: ${calda.value}
-    `;
-    resumoEl.appendChild(resumoItem);
+const subtotal = price * qty;
+
+const resumoItem = document.createElement("div");
+resumoItem.className = "resumo-item";
+resumoItem.dataset.subtotal = subtotal;
+
+resumoItem.innerHTML = `
+  <div class="resumo-texto">
+    <strong>${item.dataset.name}</strong> (${qty}x)<br>
+    Sabor: ${sabor.value}<br>
+    Complementos: ${comps.length ? comps.join(", ") : "Nenhum"}<br>
+    Calda: ${calda.value}
+  </div>
+
+  <button class="remove-item">🗑️</button>
+`;
+
+resumoEl.appendChild(resumoItem);
+
+/* remover item */
+resumoItem.querySelector(".remove-item").onclick = () => {
+  total -= subtotal;
+  totalEl.textContent = total.toFixed(2);
+  resumoItem.remove();
+};
+
 
     // ===== LIMPAR SELEÇÕES APÓS ADICIONAR =====
 
