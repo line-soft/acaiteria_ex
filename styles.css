@@ -266,3 +266,55 @@ body {
 .check-card input:checked + span {
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+/* ===== CORREÇÃO TOTAL DE ESPAÇO LATERAL (MOBILE) ===== */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* garante que nada ultrapasse a largura da tela */
+.container,
+.item,
+.cart {
+  max-width: 100vw;
+}
+
+/* ===== BOTÃO ADICIONAR FIXO AO LADO DO SABOR ===== */
+.item {
+  position: relative;
+}
+
+/* fixa a coluna de ações */
+.item-actions {
+  position: sticky;
+  top: 12px;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+/* evita que opções empurrem o layout */
+.item-info {
+  min-width: 0;
+}
+
+/* garante que o botão nunca cause overflow */
+.add {
+  white-space: nowrap;
+}
+
+/* ===== SEGURANÇA EXTRA CONTRA OVERFLOW ===== */
+img,
+label,
+span,
+button {
+  max-width: 100%;
+}
